@@ -12,7 +12,7 @@ public:
         unordered_set<ListNode*> st;
 
         while(head != NULL){
-            if(st.count(head)){
+            if(st.count(head) == 1){
                 return true;
             }
             st.insert(head);
