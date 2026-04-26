@@ -29,9 +29,6 @@ public:
             prev->next = second;
             prev = first;
         }
-
         return dummy->next;
-
-
     }
 };
