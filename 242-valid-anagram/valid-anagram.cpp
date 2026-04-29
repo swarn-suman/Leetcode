@@ -5,17 +5,19 @@ public:
             return false;
         }
 
-        sort(s.begin(),s.end());
-        sort(t.begin(),t.end());
+        unordered_map<char,int> mp;
 
-        int i = 0;
+        for(char c: s){
+            mp[c]++;
+        }
 
-        while(i < s.size()){
-            if(s[i] != t[i]){
+        for(char c: t){
+            if(mp.find(c) == mp.end() || mp[c] == 0){
                 return false;
             }
-            i++;
+            mp[c]--;
         }
+
         return true;
     }
 };
