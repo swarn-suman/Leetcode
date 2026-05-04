@@ -1,24 +1,20 @@
 class Solution {
 public:
     bool rotateString(string s, string goal) {
-        if(s.size() != goal.size()){
+
+        int n = s.length();
+        int m = goal.length();
+
+        if (n != m) {
             return false;
         }
 
-        int n = s.size();
-        int count = 0;
+        string concatenated = s + s;
 
-    while(count < n){
-        if(s == goal){
+        int index = concatenated.find(goal);
+
+        if (index != string::npos) {
             return true;
-        }
-        char ch = s[0];
-        for(int i=0; i<n-1; i++){
-                s[i] = s[i+1];
-            }
-            s[n-1] = ch;
-            count++;
-
         }
         return false;
     }
