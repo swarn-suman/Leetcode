@@ -33,4 +33,3 @@
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Follow up:</strong> Could you do this in one pass?</p>
