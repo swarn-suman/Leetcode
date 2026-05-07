@@ -70,5 +70,5 @@ Each row contains information about a student&#39;s score in a specific subject 
 	<li>Student 104 in Physics: Improved from 75 to 85</li>
 </ul>
 
-<p>Result table is ordered by student_id, subject.</p>
+<p>Result table is ordered by student_id, subject</p>
 </div>
