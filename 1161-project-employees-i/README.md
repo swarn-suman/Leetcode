@@ -9,7 +9,7 @@
 +-------------+---------+
 (project_id, employee_id) is the primary key of this table.
 employee_id is a foreign key to <code>Employee</code> table.
-Each row of this table indicates that the employee with employee_id is working on the project with project_id.
+Each row of this table indicates that the employee with employee_id is working on the project with project_id
 </pre>
 
 <p>&nbsp;</p>
