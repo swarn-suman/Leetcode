@@ -1,22 +1,20 @@
 class Solution {
 public:
+    
     vector<int> separateDigits(vector<int>& nums) {
         vector<int> ans;
-        for(int i=0; i<nums.size(); i++){
-            int n = nums[i];
-            vector<int> temp;
+        int n=nums.size();
+        for(int i=n-1;i>=0;i--){
+            while(nums[i]){
+                int dig=nums[i]%10;
+                ans.push_back(dig);
+                nums[i]/=10;
 
-            while (n > 0) {
-                int digit = n % 10;
-                temp.push_back(digit);
-                n = n/10;
-            }
-            reverse(temp.begin(), temp.end());
-
-            for (int digit : temp) {
-                ans.push_back(digit);
             }
         }
+        reverse(ans.begin(),ans.end());
         return ans;
+
+        
     }
 };
