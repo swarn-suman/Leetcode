@@ -26,7 +26,7 @@
 <pre>
 <strong>Input:</strong> arr = [7]
 <strong>Output:</strong> 0
-<strong>Explanation:</strong> Start index is the last index. You do not need to jump.
+<strong>Explanation:</strong> Start index is the last index. You do not need to jump
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
@@ -34,7 +34,7 @@
 <pre>
 <strong>Input:</strong> arr = [7,6,9,6,9,6,9,7]
 <strong>Output:</strong> 1
-<strong>Explanation:</strong> You can jump directly from index 0 to index 7 which is last index of the array.
+<strong>Explanation:</strong> You can jump directly from index 0 to index 7 which is last index of the array
 </pre>
 
 <p>&nbsp;</p>
